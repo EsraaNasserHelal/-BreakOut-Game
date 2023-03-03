@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breakout Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <audio autoplay>
+        <source src="sounds/start game.wav" type="audio/mpeg">
+    </audio>
+    <div>
+        <aside id="leftAside">
+            <button class="bttn" type="button" id="play">PLAY</button>
+            <button class="bttn" type="button" id="restart">RESTART</button>
+            <button class="bttn" type="button" id="pause">PAUSE</button>
+            <button class="bttn" type="button" id="resume">RESUME</button>
+            <button class="bttn" type="button" id="Sound">Muted</button>
+
+
+            <div><i class="fa-solid fa-volume-high" id="sound"></i></div>
+        </aside>
+        <div id="gameover">
+            <img src="./images/gameover.jpg" alt="" id="lose">
+            
+        </div>
+    
+        <canvas id="breakout" width="850px" height="500px"></canvas>
+
+    </div>
+
+    <script src="./game.js"></script>
+</body>
+</html>
