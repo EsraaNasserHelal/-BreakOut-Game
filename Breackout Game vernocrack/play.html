@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <style>
+        body {
+            text-align: center;
+
+            /* background-image: url("images/mainbgg.png") ;  */
+            /* background:linear-gradient( to bottom right,rgb(60, 216, 216) 0%, rgba(171,71,188 ,1) 70%);
+	        box-shadow: 1px 1px 30px rgba(81,45,168 ,1); */
+            background: linear-gradient(-45deg, #8152eeb7, #e73cd37a, #23a6d5, #882270);
+            background-size: 400% 400%;
+            animation: gradient 2s 2s ease infinite;
+            height: 100vh;
+
+
+
+            /* background-position: fixed !important;
+            background-repeat: no-repeat;  
+            background-size: cover; */
+        }
+
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        /* audio{
+            position: absolute;
+            transform: translate(-50%,-50%);
+        } */
+        div {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            /* margin-top: -50px; */
+            /* margin-left: -100px; */
+            text-align: center;
+        }
+
+        /* button{
+            width: 150px;
+            height: 50px;
+            background-color: aqua;
+            border: 2px solid red ;
+            border-radius: 50px;
+
+        }
+        button:hover{
+            background-color: darkblue;
+            box-shadow: red 10px 10px ,blue -10px --10px;
+            transform: scale(1.2);
+            transition: all 2s;
+        } */
+        .play-button {
+
+            cursor: pointer;
+            background-color: transparent;
+            border-color: rgb(61, 9, 109);
+            border-style: double;
+            /* background-image: url("images/playbg.png"); */
+            /* border: none; */
+            color: rgb(6, 74, 99);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 5rem;
+            font-family: moon;
+            letter-spacing: 1.5rem;
+            margin-left: 0.5rem;
+            text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #d63d91, 0 0 0.5em #d63d91,
+                0 0 0.1em #d63d91, 0 10px 3px rgba(230, 230, 230, 0.719);
+
+            animation: pulsate 1.5s infinite alternate;
+            border: 0.2rem solid #fff;
+            border-radius: 2rem;
+            padding: 0.4em;
+            box-shadow: 0 0 .2rem #fff,
+                0 0 .2rem #fff,
+                0 0 2rem #bc13fe,
+                0 0 0.8rem #bc13fe,
+                0 0 2.8rem #bc13fe,
+                inset 0 0 1.3rem #bc13fe;
+            box-shadow: 0 0 .2rem #fff, 0 0 .2rem #fff, 0 0 2rem #13fafe, 0 0 0.8rem #13fef2, 0 0 2.8rem #bc13fe, inset 0 0 1.3rem #bc13fe;
+        }
+
+        @keyframes pulsate {
+
+            100% {
+
+                text-shadow:
+                    0 0 4px #fff,
+                    0 0 11px #fff,
+                    0 0 19px #fff,
+                    0 0 40px #bc13fe,
+                    0 0 80px #bc13fe,
+                    0 0 90px #bc13fe,
+                    0 0 100px #bc13fe,
+                    0 0 150px #bc13fe;
+
+            }
+
+            0% {
+
+                text-shadow:
+                    0 0 2px #fff,
+                    0 0 4px #fff,
+                    0 0 6px #fff,
+                    0 0 10px #bc13fe,
+                    0 0 45px #bc13fe,
+                    0 0 55px #bc13fe,
+                    0 0 70px #bc13fe,
+                    0 0 80px #bc13fe;
+
+            }
+        }
+
+        .play-button:hover {
+            opacity: 0.7;
+            /* height: 250px;
+    width: 250px; */
+            color: rgb(42, 242, 149);
+        }
+
+        .play {
+            position: fixed;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-top: -50px;
+            margin-left: -100px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* border: #5fe8ff 0.5em solid;  */
+            /* width: 100%;
+  height: 100%; */
+            display: flex;
+            position: fixed;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 10px;
+            box-shadow: inset 0 0 0.5em 0 #5fe8ff, 0 0 0.5em 0 #5fe8ff;
+        }
+
+        .play-button {
+
+            position: absolute;
+
+            transform: translateY(17%);
+
+            transform: translateX(17%);
+
+
+
+        }
+
+        /* #playbg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 20%;
+    height: auto;
+} */
+    </style>
+    
+</head>
+
+<body>
+
+    <div class="play">
+        <!-- <img id="playbg" src="images/playbg.png" alt=""> -->
+         <audio autoplay="true" id="start" src="sounds/start game.wav"  ></audio> 
+         <!-- <embed src="sounds/start game.wav" width="180" height="90" loop="false" autostart="true" hidden="true" /> -->
+        <!-- <button class="play-button" onclick="window.location.replace('index.html');"> Start Game </button> -->
+        <button class="play-button" onclick="window.location.replace('levels.html');"> Start Game </button>
+
+    </div>
+
+<script>
+        // window.onload = function(){
+        //     document.getElementsByTagName("audio")[0].play();
+        // }
+
+        document.body.addEventListener("click", function () {
+    document.getElementsByTagName("audio")[0].play();
+})
+// var media =  new Audio();
+// media.src="sounds/start game.wav";
+// document.body.addEventListener("mousemove", function () {
+//    media.play();
+// })
+    </script>
+</body>
+
+</html>
