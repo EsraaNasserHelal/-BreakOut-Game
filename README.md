@@ -6,3 +6,4 @@ it's javascript game
 ![Capture3 (2)](https://user-images.githubusercontent.com/118726240/222839979-507a647f-d11a-49c9-a519-9f6ee1a3a8a1.PNG)
 ![Capture5 (2)](https://user-images.githubusercontent.com/118726240/222839982-5969fd19-35d0-4ac2-87a3-0922e8ed75c0.PNG)
 
+![win](https://user-images.githubusercontent.com/118028637/222931756-221fc332-f095-421a-a600-85e92a1a329b.jpeg)
